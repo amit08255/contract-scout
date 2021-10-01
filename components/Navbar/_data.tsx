@@ -1,6 +1,5 @@
 import * as React from 'react'
-import { IoCalendar, IoDocument, IoDocumentAttach, IoGrid, IoHelpBuoy } from 'react-icons/io5'
-import { MdWeb } from 'react-icons/md'
+import { IoDocument, IoDocumentAttach } from 'react-icons/io5'
 
 export interface Link {
   label: string
