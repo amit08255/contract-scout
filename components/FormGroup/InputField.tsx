@@ -9,10 +9,11 @@ interface Props{
     value: string|number,
     onChange: (val: string) => void,
     required?: boolean,
+    height?: string,
 };
 
 const InputField = ({
-    label, value, type = 'text', onChange, maxLength=50, id, required = false,
+    label, value, type = 'text', onChange, maxLength=50, id, required = false, height,
 }:Props) => {
     const onValueChange = (e: any) => onChange(e.target.value);
 
@@ -25,6 +26,7 @@ const InputField = ({
                 onChange={onValueChange}
                 maxLength={maxLength}
                 autoComplete="off"
+                height={height}
             />
         </FormControl>
     );
